@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Assistant for LogicMonitor | Monitoring Artist</title>
+
+  <!-- Google Analytics 4 (GA4) - Initialization -->
+  <!-- The actual GA script is loaded by React based on VITE_GA_MEASUREMENT_ID env variable -->
+  <!-- This gracefully handles cases where GA is blocked by ad blockers -->
+  <script>
+    // Pre-initialize dataLayer and gtag function for GA4
+    // This must be defined before any gtag calls
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+  </script>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="AI-powered assistant for LogicMonitor - Get expert help with monitoring, alerting, DataSources, and Groovy scripting." />
+  <meta name="keywords"
+    content="LogicMonitor, AI Assistant, Monitoring, Observability, DevOps, DataSources, Groovy, Alerting" />
+  <meta name="author" content="Monitoring Artist" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://monitoringartist.com/" />
+  <meta property="og:title" content="AI Assistant for LogicMonitor | Monitoring Artist" />
+  <meta property="og:description" content="Your expert companion for LogicMonitor observability." />
+  <meta property="og:image" content="/og-image.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://monitoringartist.com/" />
+  <meta property="twitter:title" content="AI Assistant for LogicMonitor" />
+  <meta property="twitter:description" content="Your expert companion for LogicMonitor observability." />
+  <meta property="twitter:image" content="/og-image.png" />
+
+  <!-- PWA Configuration -->
+
+  <meta name="theme-color" content="#3b82f6" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="AI Assistant for LM" />
+  <link rel="apple-touch-icon" href="/icons/icon-512x512.png" />
+
+  <!-- Critical CSS - prevents white flash -->
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+    }
+
+    html.dark,
+    html.dark body {
+      background-color: #0b0c0e;
+    }
+  </style>
+
+  <!-- Theme initialization - runs before page renders to prevent flash -->
+  <script>
+    (function () {
+      const storageKey = 'vite-ui-theme';
+      const defaultTheme = 'dark';
+
+      // Get stored theme or use default
+      let theme = localStorage.getItem(storageKey) || defaultTheme;
+
+      // Handle 'system' theme preference
+      if (theme === 'system') {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      // Apply theme class immediately
+      document.documentElement.classList.add(theme);
+    })();
+  </script>
+  <script type="module" crossorigin src="/assets/index-D487Wnp_.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BjpP2AV6.css">
+<link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
+
+<body>
+  <div id="root">
+    <!-- Loading indicator shown while React app loads -->
+    <div id="app-loader" class="app-loader">
+      <!-- Spinner Container -->
+      <div class="loader-spinner">
+        <!-- Spinning ring -->
+        <div class="loader-ring"></div>
+        <!-- Logo in center -->
+        <div class="loader-logo">
+          <img src="/favicon.svg" alt="Loading" />
+        </div>
+      </div>
+      <!-- Loading text -->
+      <p class="loader-text">Loading...</p>
+    </div>
+    <style>
+      /* Theme-aware loading styles */
+      .app-loader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        /* Light theme default */
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      }
+
+      /* Dark theme loader background */
+      .dark .app-loader {
+        background: linear-gradient(135deg, #0f0f12 0%, #1a1a24 100%);
+      }
+
+      .loader-spinner {
+        position: relative;
+        width: 100px;
+        height: 100px;
+      }
+
+      .loader-ring {
+        position: absolute;
+        inset: 0;
+        border: 4px solid rgba(59, 130, 246, 0.15);
+        border-top-color: #3b82f6;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      .loader-logo {
+        position: absolute;
+        inset: 22px;
+        background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      .loader-logo img {
+        width: 28px;
+        height: 28px;
+        opacity: 0.9;
+      }
+
+      .loader-text {
+        margin-top: 24px;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        /* Light theme text */
+        color: #64748b;
+      }
+
+      /* Dark theme text stays same gray */
+      .dark .loader-text {
+        color: #64748b;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes pulse {
+
+        0%,
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+
+        50% {
+          transform: scale(0.95);
+          opacity: 0.8;
+        }
+      }
+    </style>
+  </div>
+</body>
+
+</html>
