@@ -6,6 +6,10 @@ A web-based AI assistant that helps you with LogicMonitor monitoring, alerting, 
 
 Visit the live application at: **[ai-assistant-for-logicmonitor.monitoringartist.com](https://ai-assistant-for-logicmonitor.monitoringartist.com)**
 
+## 📊 Dashboard
+
+The AI Assistant can be added to your LogicMonitor dashboard as a widget. The dashboard JSON for easy import into LogicMonitor is available at: **[ai-assistant-for-logicmonitor-dashboard.json](ai-assistant-for-logicmonitor-dashboard.json)**
+
 ## ℹ️ About This Repository
 
 This repository contains only the **static build files** for the AI Assistant web application, served via GitHub Pages. The source code is maintained in a separate private repository.

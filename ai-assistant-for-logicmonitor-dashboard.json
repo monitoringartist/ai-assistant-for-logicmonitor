@@ -1,0 +1,42 @@
+{
+    "santabaRelease": 230,
+    "defaultDashboardFilters": {
+        "defaultDashboardFilterDetails": []
+    },
+    "widgetTokens": [],
+    "name": "AI Assistant for LogicMonitor",
+    "description": "",
+    "overwriteGroupFields": false,
+    "widgetsConfigVersion": 2,
+    "type": "dashboard",
+    "widgets": [
+        {
+            "position": {
+                "col": 1,
+                "sizex": 12,
+                "row": 1,
+                "sizey": 10
+            },
+            "config": {
+                "displaySettings": {},
+                "isSupportCustomProperty": false,
+                "supportCustomProperty": false,
+                "name": "AI Assistant for LogicMonitor",
+                "isCustom": false,
+                "description": "",
+                "resources": [
+                    {
+                        "type": "html",
+                        "URL": "https://ai-assistant-for-logicmonitor.monitoringartist.com/"
+                    }
+                ],
+                "theme": "newBorderGray",
+                "interval": 15,
+                "type": "html",
+                "timescale": "day",
+                "version": 2
+            }
+        }
+    ],
+    "version": 2
+}
